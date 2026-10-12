@@ -5,21 +5,21 @@
 class Memory < Formula
   desc "Persistent memory for AI coding agents. Agent-agnostic, single binary, zero dependencies."
   homepage "https://github.com/cloudfroghq/memory-releases"
-  version "1.5.0"
+  version "1.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cloudfroghq/memory-releases/releases/download/v1.5.0/memory_1.5.0_darwin_amd64.tar.gz"
-      sha256 "a3e16348bb66ea841f0cd8b721edf0f65985f82974ebc3c206df102cdda64ce9"
+      url "https://github.com/cloudfroghq/memory-releases/releases/download/v1.6.0/memory_1.6.0_darwin_amd64.tar.gz"
+      sha256 "af00e0da165823f165f102e72f5dc0831b12512f1df9f34c7622f9f1032b25ab"
 
       define_method(:install) do
         bin.install "memory"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cloudfroghq/memory-releases/releases/download/v1.5.0/memory_1.5.0_darwin_arm64.tar.gz"
-      sha256 "47222c78e057043d4ed541dc227513dd69687dd74bbc2cfe84e841cc01040601"
+      url "https://github.com/cloudfroghq/memory-releases/releases/download/v1.6.0/memory_1.6.0_darwin_arm64.tar.gz"
+      sha256 "bafeb30cc60daee06aeb6fd7a3f2dbb5ddf2392c806bf9ee93bcaeb0c204fe0e"
 
       define_method(:install) do
         bin.install "memory"
@@ -29,15 +29,15 @@ class Memory < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudfroghq/memory-releases/releases/download/v1.5.0/memory_1.5.0_linux_amd64.tar.gz"
-      sha256 "e9f3f894415c191a4a7a0b47b2b0804314e4544620f4851184df16ba4a28fc6d"
+      url "https://github.com/cloudfroghq/memory-releases/releases/download/v1.6.0/memory_1.6.0_linux_amd64.tar.gz"
+      sha256 "dd0f62c03cac53acd48185ee283f30ec022cfb2f8984a5df58e10ba88017b4cd"
       define_method(:install) do
         bin.install "memory"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cloudfroghq/memory-releases/releases/download/v1.5.0/memory_1.5.0_linux_arm64.tar.gz"
-      sha256 "f4bec5676f9e1cda1cbefb059eb3eaea1fb1c5131fab4064c75f1204eee7db56"
+      url "https://github.com/cloudfroghq/memory-releases/releases/download/v1.6.0/memory_1.6.0_linux_arm64.tar.gz"
+      sha256 "e988d2c107091970d2e4cd36f7dc219d046aaa3ee605e4b0f8fccb51e682ba71"
       define_method(:install) do
         bin.install "memory"
       end
